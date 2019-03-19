@@ -1,0 +1,29 @@
+.call-to-action{
+
+    padding: 180px;
+    background-image: url('https://cdn.pixabay.com/photo/2015/07/30/17/24/architecture-868077_960_720.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.call-to-action >*{
+
+    margin: 15px;
+}
+
+h1{
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.call-to-action button{
+
+    padding: 10px 35px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #945b4a;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}

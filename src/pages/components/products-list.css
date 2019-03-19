@@ -1,0 +1,23 @@
+.products-list{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+
+}
+
+.products{
+    width: 100vw;
+    padding: 60px 0;
+    background-image: url('https://cdn.pixabay.com/photo/2015/05/15/12/53/lawn-768316_960_720.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* linear-gradient(45deg,#514c5f,#536a90); */
+    color: white;
+}
+
+.h2-center{
+    text-align: center;
+    font-size: 40px;
+    color: black;
+}

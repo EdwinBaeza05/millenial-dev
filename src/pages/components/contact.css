@@ -1,0 +1,64 @@
+.form-contact input{
+
+    margin: 5px;
+    height: 25px;   
+}
+
+.form-contact textarea{
+    margin: 5px;
+}
+.transparent{
+   
+    background-color: rgb(7, 7, 7,0.5);
+    padding: 70px 200px;
+}
+
+
+.form-contact input,.form-contact textarea{
+
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: transparent;
+    font-size: 17px;
+    font-family: 'Arvo', serif;
+    padding: 20px 10px 20px 10px;
+    color: white;
+    box-shadow: 0 0 10px rgb(238, 232, 232);
+}
+.form-contact textarea{
+    padding: 10px 10px 20px 10px;
+}
+
+.form-contact input::placeholder ,.form-contact textarea::placeholder { color: white; }
+
+.form-contact {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.form-comtainer{
+
+    background-image: url('https://cdn.pixabay.com/photo/2016/08/01/10/37/lichtraum-1560788_960_720.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100vw;
+}
+.form-comtainer h2{
+    color: white;
+    padding: 20px 0;
+    
+}
+
+.form-contact button{
+    width: 15%;
+    text-align: center;
+    margin:auto;
+    margin: 10px auto;
+    padding: 8px 0;
+    font-size: 15px;
+    border: 2px #945b4a solid;
+    background-color: #945b4a;
+    border-radius: 5px;
+    color: white;
+}

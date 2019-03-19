@@ -1,0 +1,30 @@
+.product{
+    
+    width: 35%;
+    border: 1px #ccc solid;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #333;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
+    padding: 25px 40px;
+    margin: 25px;
+    color: black;
+    background-color: rgb(255, 255, 255,0.5);
+    
+}
+.product:hover{
+    
+    box-shadow: 0 0 10px rgb(240, 236, 236);
+   
+}
+.product ul{
+    text-align: left;
+}
+
+h3{
+    margin: 15px 0;
+    text-align: center;
+    font-size: 22px;
+
+}
+
