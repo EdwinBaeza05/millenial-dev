@@ -4,16 +4,17 @@ import './navbar.css';
 function Navbar(props){
         return(
             <nav ref={props.navRef}>
-                <a href="">Millenial Inmobiliaria</a>
-                <ul> 
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Servicios</a></li>
-                    <li><a href="">Quienes Somos</a></li>
-                    <li><a href="">Contacto</a></li>
+                <div>                    
+                    <a href="/">Millenial Inmobiliaria</a>
+                    <i class="fas fa-bars" ref={props.menuRef}></i>
+                </div>
+                <ul ref={props.ulRef}> 
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/products">Productos</a></li>
+                    <li><a href="/#about">Quienes Somos</a></li>
+                    <li><a href="/#contact">Contacto</a></li>
                 </ul>
             </nav>
         );
     }
-
-
 export default Navbar;

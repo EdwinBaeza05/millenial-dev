@@ -5,11 +5,13 @@ import './footer-layout.css';
 function FooterLayout (props){
 
     return (
-        <div className="footer" id="100">
+        <footer className="footer" id="footer">
             {props.children}
-        </div>
+            <figure>
+                <img src="./img/logo.png" alt=""/>
+            
+            </figure>
+        </footer>
     );
-
 }
-
 export default FooterLayout;

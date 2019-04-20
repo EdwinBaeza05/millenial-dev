@@ -1,5 +1,4 @@
 .palmares-container{
-    width: 100vw;
     padding: 60px;
     background-color: whitesmoke;
 }
@@ -9,18 +8,18 @@
 }
 .palmares-list{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;
 
 }
 
 .palmares-list>*{
-    width: 30%;
+    width: 350px;
     margin-top: 40px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px #ccc;
-    padding: 0 1px;
-
+    border: 0 red solid;;
+    padding: 5px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: stretch;
@@ -49,11 +48,8 @@
 }
 
 
-#first img, #third img{
-    border-top: 7px solid #333;
-}
-#second img {
-    border-bottom: 7px solid #333;
+#second {
+    align-items: stretch;
 }
 
 .palmares-list img{
@@ -63,4 +59,29 @@
 #first img{
     height: 100%;
     
+}
+
+@media screen and (max-width:414px){
+    .palmares-container{
+        padding: 25px;
+    }
+    .palmares-list{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+    
+    }
+    
+    .palmares-list>*{
+        width: 85vw;
+        margin-top: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #ccc;
+        border: 0 red solid;;
+        padding: 5px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: stretch;
+    
+    }
 }

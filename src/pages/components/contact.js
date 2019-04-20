@@ -5,9 +5,9 @@ function Contact (){
 
     return (
 
-        <div className="form-comtainer">
+        <div className="form-comtainer width">
             <div className="transparent">
-                <h2 className="h2-center"> Contacto</h2>
+                <h2 className="h2-center" id="contact"> Contacto</h2>
                 <form action="" className="form-contact">
                     <input type="text" name="" id="" placeholder="Nombre" required/>
                     <input type="tel" name="" id="" placeholder="Telefono" required/>

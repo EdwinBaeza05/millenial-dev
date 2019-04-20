@@ -1,3 +1,33 @@
 .text-footer>*{
     padding: 3px;
 }
+
+.text-footer>*{
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.text-footer div>*{
+    padding: 2px 5px;
+}
+
+.text-footer a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.text-footer i {
+    transform: rotateY(0);
+    transition: all 1s;
+    font-size: 20px;
+    padding: 5px;
+}
+.text-footer i:hover{
+
+    transform:rotateY(360deg);
+
+}

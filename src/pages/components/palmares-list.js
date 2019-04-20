@@ -21,12 +21,12 @@ function PalmaresList(){
         "Ubicado en Hunucma una de las zonas con mayor desarrollo en el sureste.",
                     ];
     return(
-      <section className="palmares-container">
+      <section className="palmares-container width">
         <h2 className="h2-center">Palmares</h2>
         <div className="palmares-list">
-            <Palmares id="first" img="./img/card1.jpg" items={card1}/>
-            <Palmares id="second" className ="palmar" img="./img/card4.jpg" items={card2}/>
-            <Palmares id="third" img="./img/card3.jpg" items={card3}/>
+            <Palmares id="first" img="./img/foto1.jpeg" items={card1}/>
+            <Palmares id="second" img="./img/foto2.jpeg" items={card2}/>
+            <Palmares id="third" img="./img/foto3.jpeg" items={card3}/>
         </div>
 
       </section>

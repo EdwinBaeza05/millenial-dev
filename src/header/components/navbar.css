@@ -1,24 +1,39 @@
-nav,nav:hover{
+nav{
+  padding: 20px;
     display: flex;
-    padding: 20px;
     justify-content: space-between;
-    align-items: center;
     width: 100vw;
-    background-color: #5e392e; 
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: background 1s;
+    background: transparent;
     /* linear-gradient(45deg,#514c5f,#536a90); */
 }
-
-
 nav a{
      text-decoration: none;
      color: white;
      font-size: 18px;
-     padding: 0 15px;
+     font-weight: 500;
+     padding: 5px 20px;
+}
+.nav-transparent{
+    background: whitesmoke;
+}
+.nav-transparent a{
+    color: black;
+    transition: all 0.2s;
+
+}
+.nav-transparent a:hover{
+    color: white;
+    background-color: black;
+    border-radius: 5px;
 }
 nav a:hover{
-   color: #ffe98a;
-   border-bottom: 2px #ffe98a solid;
-   border-radius: 3px;
+   color: black;
 }
 
 nav ul{
@@ -26,12 +41,90 @@ nav ul{
     justify-content: center;
     align-items: center;
     width:50%; 
+    
 }
 nav ul li{
     list-style: none;
- 
     text-align: center;
+}
+nav> div i{
+  display: none !important;
+}
+@media screen and (max-width:414px){
+  
+    nav{
+      padding: 0;
+      display: block;
+      align-items: stretch !important;
+      background-color: whitesmoke !important;
+    }
+    nav div{
+      padding: 0;
+    }
 
+    nav> div a{
+        padding: 10px 0;
+        font-size: 25px !important;
+    }
+    nav a{
+       text-decoration: none;
+       color: black;
+       font-size: 18px;
+       font-weight: 500;
+       text-align: center;
+       width: 100%;
+  }
+    nav >*{
+      width: 100% !important;
+  }
+  
+    nav ul{
+      visibility: hidden;
+      display: none;
+      transition: all 2s !important;
+   
+    }
+    nav div {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 85%;
+    }
+    nav> div i{
+      display: inline-block !important;
+      font-size: 38px;
+      width: 15%;
+      padding: 10px 5px;
+    }
+    nav ul li{
+      width: 100%;
+    }
+    
+    nav ul li a:hover{
+      color: white !important;
+      background-color: black;
+    }
+    nav ul li a{
+      display: block;
+      padding: 10px 0;
+}
+
+.menu-hidden{
+  display: flex !important;
+  flex-flow: column nowrap !important;
+  color: blue !important;
+  visibility: visible;
+  transition: all 2s;
+  
+  }
+
+  .nav-transparent a:hover{
+    color: white;
+    background-color: black;
+    border-radius: 0;
+}
+  
 }
 
 

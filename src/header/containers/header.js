@@ -1,31 +1,40 @@
 import React from 'react';
 import Navbar from './../components/navbar';
-import CalltoAction from './../components/call-to-action'
+
 class Header extends React.Component{
 
     componentDidMount(){
-        window.addEventListener("scroll",()=>{
-            console.log(window.scrollY)
-            if(window.scrollY>15){
-                this.navRef.classList.add("nav-transparent")
-                
+        const mediaQueryDesktop = window.matchMedia("(min-width: 786px)");
+        if(mediaQueryDesktop.matches){
+            window.onscroll = ()=>{
+                if(window.scrollY>5){
+                   this.navRef.classList.add("nav-transparent");            
+                }
+                if(window.scrollY<=5){
+                    this.navRef.classList.remove("nav-transparent");
+                }
             }
-            if(window.scrollY<=15){
-                this.navRef.classList.remove("nav-transparent")
-            }
-        });
+        }else{
+            this.menuRef.addEventListener('click',()=>{
+                 this.ulRef.classList.toggle("menu-hidden");
+            });
+        }
     }
-
+    
     navRefFunc = (element)=>{
-
-        this.navRef = element
+        this.navRef = element;
+    }
+    menuRefFunc = (element)=>{
+        this.menuRef = element;
+    }
+    ulRefFunc = (element)=>{
+        this.ulRef = element
     }
 
     render(){
         return(
-            <header>
-                <Navbar navRef = {this.navRefFunc}/>
-                <CalltoAction/>
+            <header className="width">
+                <Navbar navRef = {this.navRefFunc} menuRef={this.menuRefFunc} ulRef={this.ulRefFunc}/>
             </header>
         );
     }

@@ -4,13 +4,12 @@ import './about-component.css';
 function AboutComponent (props){
 
     return(
-        <section className="about">
-
+        <section className="about" id="about">
             <div className="contenedor">
                 <div className="logo" >
                     <div className="text-logo toggle-b">
                         <p className="texto-logo-deactivate">
-                        <a href="">Ver en el Mapa</a>    
+                        <a href="#mapa"><i class="fas fa-map-marker-alt"></i></a>    
                         </p>  
                     </div>
                 </div>
@@ -20,6 +19,10 @@ function AboutComponent (props){
                 <p>
                 Millennial Servicios Inmobiliarios es una empresa yucateca, ubicada en Mérida, en una de las
 ciudades más seguras, con mayor crecimiento económico y calidad de vida de nuestro país.
+                </p>
+                <p>
+                Somos un equipó de agentes que brindamos servicios de consultoría y asesoría en la adquisición de
+tus inversiones inmobiliarias y patrimoniales.
                 </p>
             </article>
         </section>

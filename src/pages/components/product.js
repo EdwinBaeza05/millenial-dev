@@ -5,15 +5,9 @@ function Product(props){
     return(
         <article className="product">
             <h3>{props.title}</h3>
-            <ul>
-                {props.items.map((item,index)=>{
-                    return(
-                        <li key={index}>
-                            {item}
-                        </li>
-                    );
-                })}
-            </ul>
+            <figure>
+                <img src={props.img} alt=""/>
+            </figure>
         </article>
     );
 }
