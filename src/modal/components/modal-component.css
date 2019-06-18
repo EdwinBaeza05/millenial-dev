@@ -1,0 +1,66 @@
+.modal{
+  position: fixed;
+  z-index: 1;
+  width: 700px;
+  height: 500px;
+  margin-top: -250px;
+  margin-left: -350px;
+  left: 50%;
+  top: 50%;
+  border: 2px solid #333;
+  border-radius: 14px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  animation: modal 2.5s;
+  background: transparent;
+  overflow: hidden
+}
+
+.Modal-close {
+    opacity: .5;
+    color: #fff;
+    position: absolute;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    line-height: 1.85rem;
+    text-align: center;
+    font-size: 1.25rem;
+    background-color: rgba(128,128,128,.5);
+    border: 2px solid #fff;
+    top: 5px;
+    right: 5px;
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+    z-index: 10000;
+   
+  }
+  .Modal-close:hover {
+    opacity: 1;
+  }
+  .blur {
+      max-height: 100vw;
+      border: 1px whitesmoke solid;  
+      filter: blur(5px);
+      -webkit-filter: blur(5px);
+  }
+ 
+
+  @media screen and (max-width:414px){
+    .modal{
+      max-width: 345px;
+      height: 505px;
+      margin-top: -250px;
+      margin-left: -175px;
+    }
+  }
+  @keyframes modal{
+    from{
+      margin-top: -1000px;
+    }
+    to{
+      margin-top: -250px;
+    }
+  }
+
+ 

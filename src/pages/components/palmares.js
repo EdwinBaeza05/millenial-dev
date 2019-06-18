@@ -9,7 +9,7 @@ function Palmares(props){
     return(
         <article id={props.id}>
             <figure>
-                <img src={props.img} alt=""/>
+                <img src={props.img} alt="Palmares"/>
             </figure>
             <ul>
                 {props.items.map((item,index)=>{

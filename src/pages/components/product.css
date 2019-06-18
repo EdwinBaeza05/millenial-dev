@@ -36,10 +36,11 @@ h3{
 
 @media screen and (max-width:414px){
     .product{
-    
         width: 85vw;
         padding: 5px;
- 
-        
+    }
+    .product img{
+        border: 5px #ccc solid;
+        box-shadow: 0 0 50px #333;
     }
 }

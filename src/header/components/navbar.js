@@ -5,8 +5,8 @@ function Navbar(props){
         return(
             <nav ref={props.navRef}>
                 <div>                    
-                    <a href="/">Millenial Inmobiliaria</a>
-                    <i class="fas fa-bars" ref={props.menuRef}></i>
+                    <a href="/">Millennial Inmobiliaria</a>
+                    <i className="fas fa-bars" ref={props.menuRef}></i>
                 </div>
                 <ul ref={props.ulRef}> 
                     <li><a href="/">Inicio</a></li>

@@ -57,6 +57,8 @@ nav> div i{
       display: block;
       align-items: stretch !important;
       background-color: whitesmoke !important;
+      width: 100vw !important;
+      
     }
     nav div{
       padding: 0;

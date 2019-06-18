@@ -6,7 +6,7 @@ function Product(props){
         <article className="product">
             <h3>{props.title}</h3>
             <figure>
-                <img src={props.img} alt=""/>
+                <img src={props.img} alt={props.title}/>
             </figure>
         </article>
     );

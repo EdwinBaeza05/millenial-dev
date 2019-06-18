@@ -10,11 +10,11 @@ function CompanyData(){
             </div>
             <div>
                 <i class="fas fa-phone"></i>
-                <p>(999) 0000000 </p>
+                <p>9991118411</p>
             </div>
             <div>
                 <i class="fas fa-envelope"></i>
-                <p>contacto@millenial.com </p>
+                <p>millennialinmobiliaria@gmail.com</p>
             </div>
             <div>
                 <a href="https://www.facebook.com/Millennial-servicios-inmobiliarios-294370911424118/"><i class="fab fa-facebook-f"></i></a>

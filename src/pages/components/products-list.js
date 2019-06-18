@@ -16,7 +16,7 @@ function ProductsList (){
             <h2 className="h2-center">Productos</h2>
             <div className="products-list">
                 <Product className="product" title="Terrenos" img="/img/product1.jpeg"/>
-                <Product className="product" title="Komchen"img="/img/product2.jpeg"/>
+                <Product className="product" title="Lotes"img="https://www.millennialinmobiliaria.com/millennial-backend/storage/app/public/images/imageOK.png"/>
             </div>
         </section>
     );

@@ -21,12 +21,11 @@ function AboutComponent (props){
 ciudades más seguras, con mayor crecimiento económico y calidad de vida de nuestro país.
                 </p>
                 <p>
-                Somos un equipó de agentes que brindamos servicios de consultoría y asesoría en la adquisición de
+                Somos un equipo de agentes que brindamos servicios de consultoría y asesoría en la adquisición de
 tus inversiones inmobiliarias y patrimoniales.
                 </p>
             </article>
         </section>
     );
 }
-
 export default AboutComponent;

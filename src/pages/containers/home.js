@@ -7,20 +7,78 @@ import Contact from './../components/contact';
 import Location from './../components/location'; 
 import Advantage from './../components/advantage'; 
 import CalltoAction from './../../header/components/call-to-action'
+import ModalContainer from './../../modal/containers/modal-container';
 class Home extends React.Component{
+
+    constructor(props){
+        super(props);
+        this.state = {
+            viewModalLoading:false,
+            viewModalLoadingOk: false,
+            viewModalLoadingError: false
+        };
+    }
+    cleanScreen(){
+        setTimeout(()=>{
+        this.setState({
+                    viewModalLoading:false,
+                    viewModalLoadingOk: false,
+                    viewModalLoadingError: false
+                });
+        },10000)
+    }
+    handleClickEnviar = (event) =>{
+        event.preventDefault();
+        const formData = new FormData(event.target);
+        fetch('https://millennialinmobiliaria.com/millennial-backend/api/contact', {
+        method: 'POST',
+        body: formData
+        }).then(res => res.json())
+        .catch(error => {
+            console.error('Error:', error)
+            this.setState({
+                viewModalLoading:false,
+                viewModalLoadingOk: false,
+                viewModalLoadingError: true
+            });
+            this.cleanScreen();
+        })
+        .then(response => {
+            console.log('Success:', response)
+            if(!this.state.viewModalLoadingError){
+                this.setState({
+                    viewModalLoading:false,
+                    viewModalLoadingOk: true,
+                viewModalLoadingError: false
+                });
+                this.cleanScreen();
+            }
+        });
+            this.setState({
+                viewModalLoading:true,
+                viewModalLoadingOk: false,
+                viewModalLoadingError: false
+            });
+       
+
+    }
 
     render(){
 
         return(
-            <div>
+            <React.Fragment>
                 <CalltoAction/>
                 <AboutComponent/>
                 <Advantage/>
                 <ProductList/>
                 <PalmaresList/>
-                <Contact/>
+                <Contact handleClickEnviar ={this.handleClickEnviar}
+                viewModalLoading = {this.state.viewModalLoading}
+                viewModalLoadingOk = {this.state.viewModalLoadingOk}
+                viewModalLoadingError = {this.state.viewModalLoadingError}
+                />
                 <Location/>
-            </div>
+            </React.Fragment>
         );
     }
 }

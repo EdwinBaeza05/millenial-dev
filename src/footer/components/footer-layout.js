@@ -8,7 +8,7 @@ function FooterLayout (props){
         <footer className="footer" id="footer">
             {props.children}
             <figure>
-                <img src="./img/logo.png" alt=""/>
+                <img src="./img/logo.png" alt="logo"/>
             
             </figure>
         </footer>

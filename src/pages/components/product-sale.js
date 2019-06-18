@@ -4,10 +4,10 @@ import './product-sale.css';
 function ProductSale(props) {
     
     return(
-        <div className="product-card">
+        <div className="product-card" id={props.id}>
             <div className="product-header">
                 <h2>{props.product.name}</h2>
-                <div> En Venta</div>
+                <div> En {props.product.state}</div>
             </div>
             <div className="product-sale">
                 <div className="data-group">
@@ -15,8 +15,16 @@ function ProductSale(props) {
                     <p>{props.product.size}</p>
                 </div>
                 <div className="data-group">
+                    <label> Ubicacion:</label>
+                    <p>{props.product.location}</p>
+                </div>
+                <div className="data-group">
+                    <label> Tablaje: </label>
+                    <p>{props.product.tablaje}</p>
+                </div>
+                <div className="data-group">
                     <label> Precio De Contado: </label>
-                    <p>{props.product.priceCash}</p>
+                    <p>${props.product.price}</p>
                 </div>
                 <div className="data-group">
                     <label> Precio a 6 Meses: </label>
@@ -31,7 +39,11 @@ function ProductSale(props) {
                     <p>{props.product.price18}</p>
                 </div>
             </div>
-            <button>Contactar</button>
+            <button 
+            data-product-id={props.id} 
+            onClick={props.clickContactar}>
+            Contactar
+            </button>
         </div>
     );
 }

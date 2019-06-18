@@ -13,7 +13,10 @@
     padding: 70px 200px;
 }
 
-.form-contact input,.form-contact textarea{
+.form-contact input[type="text"],
+.form-contact textarea,
+.form-contact input[type="email"],
+.form-contact input[type="tel"]{
 
     margin: 5px;
     border-radius: 5px;
@@ -24,6 +27,8 @@
     padding: 20px 10px 20px 10px;
     color: white;
     box-shadow: 0 0 10px rgb(238, 232, 232);
+    -webkit-box-shadow: 0 0 10px rgb(238, 232, 232);
+    -moz-box-shadow:0 0 10px rgb(238, 232, 232);
 }
 .form-contact textarea{
     padding: 10px 10px 20px 10px;
@@ -48,12 +53,12 @@
     
 }
 
-.form-contact button{
+.form-contact input[type="submit"]{
     width: 15%;
     text-align: center;
-    margin:auto;
     margin: 10px auto;
-    padding: 8px 0;
+    padding: 10px 0;
+    padding-bottom: 25px;
     font-size: 15px;
     border: 2px rgb(196, 29, 29) solid;
     background-color: rgb(196, 29, 29);;
@@ -61,16 +66,19 @@
     color: white;
 }
 
+
+
 @media screen and (max-width:414px){
     .transparent{
         padding: 25px;
     }
 
-    .form-contact button{
+    .form-contact input[type="submit"]{
         width: 100px;
         text-align: center;
         margin: 10px auto;
         padding: 8px 0;
+        padding-bottom: 25px;
         font-size: 15px;
         border: 2px rgb(196, 29, 29) solid;
         background-color: rgb(196, 29, 29);;
