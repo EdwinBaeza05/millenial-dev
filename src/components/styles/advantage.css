@@ -1,0 +1,45 @@
+.advantage{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 10px 80px 60px 80px;
+}
+
+.advantage >*{
+    max-width: 200px;
+    text-align: center;
+
+}
+
+.advantage i{
+    font-size: 60px;
+    color: rgb(52, 126, 216);
+}
+
+.advantage p{
+    text-align:center;
+    padding: 20px 10px;
+}
+
+@media screen and  (max-width:414px){
+
+    .advantage{
+        flex-flow: column nowrap;
+        padding:0 80px 60px 80px;
+     }
+    .advantage >*{
+        max-width: 320px;
+        text-align: center;
+    }
+
+    .advantage i{
+        font-size: 80px;
+    }
+    .advantage >*{
+        margin: 20px 0;
+    
+    }
+    
+    
+
+}

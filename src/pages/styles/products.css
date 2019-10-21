@@ -1,0 +1,24 @@
+.error{
+    padding: 100px;
+    margin: 100px;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+
+@media screen and (max-width:414px){
+    .error{
+        padding: 40px 20px;
+        margin: 100px;
+        text-align: center;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}

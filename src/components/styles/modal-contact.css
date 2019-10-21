@@ -1,0 +1,64 @@
+.modal-contact{
+    background-image:url('./../../img/background-modal-contact.jpg');
+    background-position-y: -150px;
+    background-position-x: -260px;
+    border-radius: 14px;
+}
+.modal-contact>div{
+  background-color: rgb(0, 0, 0,0.45);
+  border-radius: 14px;
+}
+
+.modal-contact form{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 25px 35px 25px;
+}
+
+.modal-contact form input, .modal-contact form textarea{
+  margin: 5px;
+  padding: 3px;
+  border:2px #ccc solid;
+  box-shadow: 0 0 40px #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 100%;
+  background:transparent;
+  color: white;
+}
+
+.modal-contact form input::placeholder , .modal-contact form textarea::placeholder{
+  color: #ccc;
+}
+.modal-contact form input[type="submit"]{
+  background-color: #145374;
+  width: 30%;
+  border:0;
+  padding: 8px 10px;
+}
+.modal-contact h2{
+  margin: auto;
+  text-align: center;
+  padding: 10px 10px 0 10px;
+  color: white;
+}
+
+
+
+@media screen and (max-width:414px){
+
+    .modal-contact{
+      background-image:url('./../../img/background-modal-contact2.jpg');
+      background-position: -150px;
+      background-position-y: 50px;
+  }
+  .modal-contact>div{
+    background-color: rgb(0, 0, 0,0.5);
+  }
+  .modal-contact form{
+    padding: 20px 10px 45px 10px;
+  }  
+
+  }

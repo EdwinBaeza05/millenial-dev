@@ -1,0 +1,89 @@
+.palmares-container{
+    padding: 60px;
+    background-color: white;
+}
+.palmares-container h2{
+    text-align: center;
+
+}
+.palmares-list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+}
+
+.palmares-list>*{
+    width: 350px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+    -webkit-box-shadow: 0px 0px 10px #ccc;
+    -moz-box-shadow: 0px 0px 10px #ccc;
+    border: 0 red solid;;
+    padding: 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+
+}
+
+.palmares-list>*:hover{
+
+    box-shadow: 0px 0px 10px#536a90;
+
+}
+
+.palmares-list figure{
+    margin: 0;
+    padding: 0;
+}
+
+.palmares-list ul{
+    padding: 30px;
+}
+#second{
+
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    justify-content: stretch;
+}
+
+
+#second {
+    align-items: stretch;
+}
+
+.palmares-list img{
+    width: 100%;
+    border-radius: 5px;
+}
+#first img{
+    height: 100%;
+    
+}
+
+@media screen and (max-width:414px){
+    .palmares-container{
+        padding: 25px;
+    }
+    .palmares-list{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+    
+    }
+    
+    .palmares-list>*{
+        width: 85vw;
+        margin-top: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #ccc;
+        border: 0 red solid;;
+        padding: 5px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: stretch;
+    
+    }
+}

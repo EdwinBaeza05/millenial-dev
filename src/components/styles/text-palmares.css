@@ -1,0 +1,19 @@
+.text-palmares{
+    padding: 15% 40px;
+    background-image: url('http://localhost:3000/img/informe.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+
+}
+
+.text-palmares p{
+    background-color: rgba(29, 31, 32, 0.7);
+    border-radius: 10px;
+    padding: 25px;
+    color: white;
+}
+
+.palmares-data{
+    
+}

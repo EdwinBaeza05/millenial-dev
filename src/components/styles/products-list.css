@@ -1,0 +1,30 @@
+.products-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+
+}
+.products{
+    padding: 60px 0;
+    background-color: white;
+    /* linear-gradient(45deg,#514c5f,#536a90); */
+    color: white;
+}
+
+.h2-center{
+    text-align: center;
+    font-size: 40px;
+    color: black;
+}
+
+@media screen and (max-width:414px){
+    .products-list{
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .products{
+        background: transparent;
+    }
+    
+}

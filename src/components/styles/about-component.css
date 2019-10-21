@@ -1,0 +1,123 @@
+.about{
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    
+}
+
+.about >*{
+    padding: 15px 0;
+    flex-shrink: 1;
+}
+.contenedor{
+    width: 400px;
+}
+
+.about article{
+    width: 700px;
+    text-align: left;
+    
+}
+.about article p{
+   
+    font-size: 20px;
+    padding: 10px 0;
+    text-align: justify;
+}
+
+
+.contenedor{
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.logo{
+    background-image: url('./../../img/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #ccc ;
+}
+
+.logo:hover> .text-logo{
+    visibility: visible;
+    opacity: 1;
+    
+    
+}
+
+.text-logo{
+    width: 100%;
+    background-color: rgb(204, 204, 204,0.7);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s;
+}
+.text-logo a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.about h2{
+    font-size: 33px;
+}
+.about i{
+
+    font-size: 95px;
+    color: rgb(52, 126, 216);
+}
+
+
+@media screen and (max-width:414px){
+    .logo{
+        width: 250px;
+        height: 250px;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .about{
+        flex-flow: column nowrap;
+        padding: 30px;
+    }
+    .about h2{
+        font-size: 26px;
+        text-align: center;
+    }
+    
+    .about>*{
+        width:95vw !important;
+    }
+
+    .text-logo{
+        display: none;
+    }
+    .about article p{
+        padding: 22px 20px !important;
+        font-size: 20px;
+        text-align: justify;
+    }
+    
+
+}
+
